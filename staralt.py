@@ -149,7 +149,11 @@ class Visibility():
 		plt.fill_between(altitudes.x_time, 0, 90, altitudes.sun.alt < -18*u.deg, color='k', zorder=0, alpha = 0.2)  
 
 		plt.legend()
-		plt.xlim(-4.5, 8)          #can change this as appropriate, it is the number of hours before and after midnight (ie on your x-axis)
+		if date.timezone == 'NZDT':
+			plt.xlim(-4.5, 8)
+		else:
+			plt.xlim(-8, 9)
+
 		plt.ylim(0, 90)  #could range from 0-90 degrees
 		plt.xlabel('Hours from Midnight',fontsize=15)  
 		plt.ylabel('Altitude [deg]',fontsize=15)  
