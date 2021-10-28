@@ -12,10 +12,5 @@ if __name__ == '__main__':
 	parser.add_argument('-plot', default = True, type=bool, help=('RA in either hourangle or degrees'))
 
 	args = parser.parse_args()
-	print('have arguments')
-	observatory = Observatory()
-	date = Date(date=args.date)
-	target = Target(ra = args.ra, dec = args.dec, date = date)
-	altitudes = Altitudes(observatory, date, target)
-	Visibility(altitudes, date, plot = args.plot)
-
+	print('parsed arguments')
+	mjo_alt(args.ra, args.dec,args.date,args.name,args.plot)
