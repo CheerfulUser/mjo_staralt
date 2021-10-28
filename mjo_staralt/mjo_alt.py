@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import argparse,sys
-from staralt import *
+from staralt import mjo_vis
 
 
 if __name__ == '__main__':
@@ -13,4 +13,4 @@ if __name__ == '__main__':
 
 	args = parser.parse_args()
 	print('parsed arguments')
-	mjo_alt(args.ra, args.dec,args.date,args.name,args.plot)
+	mjo_vis(args.ra, args.dec,args.date,args.name,args.plot)

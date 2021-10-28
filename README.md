@@ -9,8 +9,8 @@ pip install git+https://github.com/CheerfulUser/mjo_staralt.git
 
 Once it is successfully installed, the visibility curve can be plotted for any target with just:
 ```python
-from mjo_staralt import mjo_alt
-mjo_alt(ra=44,dec=-11,date='2021-12-03')
+from mjo_staralt import mjo_vis
+mjo_vis(ra=44,dec=-11,date='2021-12-03')
 ```
 If no date is provided then it defaults to the current date. 
 

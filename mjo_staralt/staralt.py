@@ -162,7 +162,7 @@ class Visibility():
 		#plt.savefig('TargetVisibility_{}.png'.format(obs_dates_save))
 		plt.show(block=True)
 
-def mjo_alt(ra,dec,date=None,name='target',plot=True):
+def mjo_vis(ra,dec,date=None,name='target',plot=True):
 	observatory = Observatory()
 	date = Date(date)
 	target = Target(ra = ra, dec = dec, date = date)
