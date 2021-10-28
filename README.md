@@ -1,6 +1,6 @@
 mjo_staralt
 ===========
-Scripts to make a quick visibility plot for a given static target. Adapted from Aayushi Verma's code.
+Scripts to make a quick visibility plot for a given static target. Adapted from Aayushi Verma's code [NEOExchange-Observations-Planner](https://github.com/awesomecosmos/NEOExchange-Observations-Planner).
 
 You can pip install mjo_staralt as:
 ```bash
