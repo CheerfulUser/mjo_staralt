@@ -164,7 +164,7 @@ class Visibility():
 
 def mjo_alt(ra,dec,date=None,name='target',plot=True):
 	observatory = Observatory()
-	date = Date('2021-12-03')
+	date = Date(date)
 	target = Target(ra = ra, dec = dec, date = date)
 	altitudes = Altitudes(observatory, date, target)
 	if plot:
