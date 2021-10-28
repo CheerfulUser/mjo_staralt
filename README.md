@@ -12,6 +12,8 @@ Once it is successfully installed, the visibility curve can be plotted for any t
 from mjo_staralt import mjo_vis
 mjo_vis(ra=44,dec=-11,date='2021-12-03')
 ```
+![plot](./figs/example.png)
+
 If no date is provided then it defaults to the current date. 
 
 Scripts can also be run through the commandline with mjo_alt.py which takes arguments of ra, dec, and date in the format of 'YYYY-mm-dd'. If a date is not specified then the current date is used.
