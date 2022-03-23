@@ -143,10 +143,10 @@ class Visibility():
 		# defining twilight/nighttimes
 		# plt.fill_between(delta_midnight, 0, 90, sunaltazs.alt < -0*u.deg, color='0.5', zorder=0)  
 		# plt.fill_between(delta_midnight, 0, 90, sunaltazs.alt < -18*u.deg, color='k', zorder=0)   
-		plt.fill_between(altitudes.x_time, 0, 90, altitudes.sun.alt < -0*u.deg, color='sandybrown', zorder=0, alpha = 0.2)  
-		plt.fill_between(altitudes.x_time, 0, 90, altitudes.sun.alt < -6*u.deg, color='cornflowerblue', zorder=0, alpha = 0.2) 
-		plt.fill_between(altitudes.x_time, 0, 90, altitudes.sun.alt < -12*u.deg, color='darkblue', zorder=0, alpha = 0.2)  
-		plt.fill_between(altitudes.x_time, 0, 90, altitudes.sun.alt < -18*u.deg, color='k', zorder=0, alpha = 0.2)  
+		plt.fill_between(altitudes.x_time.value, 0, 90, where=(altitudes.sun.alt.deg < -0), color='sandybrown', zorder=0, alpha = 0.2)  
+		plt.fill_between(altitudes.x_time.value, 0, 90, where=(altitudes.sun.alt.deg < -6), color='cornflowerblue', zorder=0, alpha = 0.2) 
+		plt.fill_between(altitudes.x_time.value, 0, 90, where=(altitudes.sun.alt.deg < -12), color='darkblue', zorder=0, alpha = 0.2)  
+		plt.fill_between(altitudes.x_time.value, 0, 90, where=(altitudes.sun.alt.deg < -18), color='k', zorder=0, alpha = 0.2)  
 
 		plt.legend()
 		if date.timezone == 'NZDT':
